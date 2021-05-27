@@ -155,3 +155,5 @@ Thumbs.db
 
 saved/*.h5
 data/*.csv
+
+.vscode

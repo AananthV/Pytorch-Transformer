@@ -69,8 +69,8 @@ class MultiHeadAttention(nn.Module):
 
         # Linear projections
         lq = [self.Lq[i](Q) for i in range(self.h)]
-        lk = [self.Lq[i](K) for i in range(self.h)]
-        lv = [self.Lq[i](V) for i in range(self.h)]
+        lk = [self.Lk[i](K) for i in range(self.h)]
+        lv = [self.Lv[i](V) for i in range(self.h)]
 
         # Attention
         heads = torch.cat(
